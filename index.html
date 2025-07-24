@@ -17,20 +17,20 @@
 <body>
     <header class="header">
         <div class="container">
-            <nav class="site-nav">
+            <nav class="header__nav">
                 <a class="logo link" href="./index.html">Healthier</a>
-                <ul class="nav-list list">
-                    <li class="nav-item">
-                        <a class="nav-link link" href="#">About</a>
+                <ul class="nav-menu list">
+                    <li class="nav-menu__item">
+                        <a class="nav-menu__link link" href="#">About</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link link" href="#">Services</a>
+                    <li class="nav-menu__item">
+                        <a class="nav-menu__link link" href="#">Services</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link link" href="#">Team</a>
+                    <li class="nav-menu__item">
+                        <a class="nav-menu__link link" href="#">Team</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link link" href="#">Contact</a>
+                    <li class="nav-menu__item">
+                        <a class="nav-menu__link link" href="#">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -39,59 +39,62 @@
     <main>
         <section class="hero section">
             <div class="container">
-                <h1 class="section-title hero-title">The dawn of a new era in health is here</h1>
-                <h2 class="hero-subtitle">Lorem ipsum dolor sit amet consectetur. Quam ut consequat at a. Diam lacus
+                <h1 class="section-title hero__title">The dawn of a new era in health is here</h1>
+                <h2 class="hero__subtitle">Lorem ipsum dolor sit amet consectetur. Quam ut consequat at a. Diam lacus
                     platea orci vel elit blandit facilisis
                 </h2>
-                <button class="hero-btn" type="button">Join now</button>
-                <ul class="hero-list list">
-                    <li class="hero-list-item">
+                <button class="btn hero__btn" type="button">Join now</button>
+                <ul class="image-list list">
+                    <li class="image-list__item">
                         <img src="./images/hero-img-1.jpg" alt="Girl in lotus position">
                     </li>
-                    <li class="hero-list-item">
+                    <li class="image-list__item">
                         <img src="./images/hero-img-2.jpg" alt="Mortar with ingredients">
                     </li>
                 </ul>
             </div>
         </section>
         <section class="intro section">
-            <div class="container intro-container">
+            <div class="container container--light intro__container">
                 <div>
-                    <h2 class="section-title intro-title">Wellbeing is welldoing</h2>
-                    <ul class="intro-list list">
-                        <li class="intro-list-item">
-                            <p class="intro-list-text">Lorem ipsum dolor sit amet consectetur. Quam ut consequat at a.
-                                Diam lacus platea orci vel elit.</p>
+                    <h2 class="section-title">Wellbeing is welldoing</h2>
+                    <ul class="features-list list">
+                        <li class="features-list__item">
+                            <p class="features-list__text features-list__text--leaf">Lorem ipsum dolor sit amet
+                                consectetur. Quam ut consequat at
+                                a. Diam lacus platea orci vel elit.</p>
                         </li>
-                        <li class="intro-list-item">
-                            <p class="intro-list-text">Lorem ipsum dolor sit amet consectetur. Quam ut consequat at a.
-                                Diam lacus platea orci vel elit.</p>
+                        <li class="features-list__item">
+                            <p class="features-list__text features-list__text--leaf">Lorem ipsum dolor sit amet
+                                consectetur. Quam ut consequat at
+                                a. Diam lacus platea orci vel elit.</p>
                         </li>
                     </ul>
                 </div>
-                <img src="./images/meditation.svg" alt="Meditation" width="291" height="294">
+                <img class="intro__image" src="./images/meditation.svg" alt="Meditation" width="291" height="294">
             </div>
         </section>
         <section class="organic-benefits section">
-            <div class="container organic-benefits-container">
+            <div class="container organic-benefits__container">
                 <img src="./images/sprouts.jpg" alt="Sprouts" width="623" height="578">
                 <div>
-                    <h2 class="section-title organic-benefits-title">Fresh organic produce</h2>
-                    <p class="organic-benefits-text">Lorem ipsum dolor sit amet consectetur. Quam ut consequat at a.
-                        Diam lacus platea orci vel elit blandit facilisis enim risus. Ut tristique eget integer odio nec
+                    <h2 class="section-title organic-benefits__title">Fresh organic produce</h2>
+                    <p class="organic-benefits__info">Lorem ipsum dolor sit amet consectetur. Quam ut consequat
+                        at a. Diam lacus platea orci vel elit blandit facilisis enim risus. Ut tristique eget integer
+                        odio nec
                         vulputate consequat. Elit mattis ac in amet sit viverra.
                     </p>
-                    <ul class="organic-benefits-list list">
-                        <li class="organic-benefits-list-item">
-                            <p class="organic-benefits-list-text">Lorem ipsum dolor sit amet consectetur. Quam ut
+                    <ul class="organic-benefits__list list">
+                        <li class="organic-benefits__item">
+                            <p class="organic-benefits__text">Lorem ipsum dolor sit amet consectetur. Quam ut
                                 consequat at a. Diam lacus platea</p>
                         </li>
-                        <li class="organic-benefits-list-item">
-                            <p class="organic-benefits-list-text">Lorem ipsum dolor sit amet consectetur. Quam ut
+                        <li class="organic-benefits__item">
+                            <p class="organic-benefits__text">Lorem ipsum dolor sit amet consectetur. Quam ut
                                 consequat at a. Diam lacus platea</p>
                         </li>
-                        <li class="organic-benefits-list-item">
-                            <p class="organic-benefits-list-text">Lorem ipsum dolor sit amet consectetur. Quam ut
+                        <li class="organic-benefits__item">
+                            <p class="organic-benefits__text">Lorem ipsum dolor sit amet consectetur. Quam ut
                                 consequat at a. Diam lacus platea</p>
                         </li>
                     </ul>
@@ -99,17 +102,19 @@
             </div>
         </section>
         <section class="nutrition section">
-            <div class="container nutrition-container">
+            <div class="container container--light nutrition__container">
                 <img src="./images/cocktails.svg" alt="Cocktails" width="350" height="347">
-                <div>
-                    <h2 class="section-title nutrition-title">You are what you eat</h2>
-                    <ul class="nutrition-list list">
-                        <li class="nutrition-list-item">
-                            <p class="nutrition-list-text">Lorem ipsum dolor sit amet consectetur. Quam ut consequat at
+                <div class="nutrition__content">
+                    <h2 class="section-title">You are what you eat</h2>
+                    <ul class="features-list list">
+                        <li class="features-list__item">
+                            <p class="features-list__text features-list__text--leaf-orange">Lorem ipsum dolor sit amet
+                                consectetur. Quam ut consequat at
                                 a. Diam lacus platea orci vel elit.</p>
                         </li>
-                        <li class="nutrition-list-item">
-                            <p class="nutrition-list-text">Lorem ipsum dolor sit amet consectetur. Quam ut consequat at
+                        <li class="features-list__item">
+                            <p class="features-list__text features-list__text--leaf-orange">Lorem ipsum dolor sit amet
+                                consectetur. Quam ut consequat at
                                 a. Diam lacus platea orci vel elit.</p>
                         </li>
                     </ul>
@@ -117,62 +122,62 @@
             </div>
         </section>
         <section class="cta">
-            <div class="container cta-container">
-                <h2 class="cta-title">Wellbeing starts with welldoing</h2>
-                <p class="cta-text">Lorem ipsum dolor sit amet consectetur. Quam ut consequat at a. Diam lacus platea
+            <div class="container cta__container">
+                <h2 class="cta__title">Wellbeing starts with welldoing</h2>
+                <p class="cta__info">Lorem ipsum dolor sit amet consectetur. Quam ut consequat at a. Diam lacus platea
                     orci vel elit blandit facilisis enim
                     risus. Ut tristique eget integer odio nec.</p>
-                <button class="cta-btn" type="button">Join now</button>
-                <ul class="cta-list list">
-                    <li class="cta-list-item">
-                        <p class="cta-list-text">Plant protective</p>
+                <button class="btn cta__btn" type="button">Join now</button>
+                <ul class="cta__list list">
+                    <li class="cta__item">
+                        <p class="cta__text">Plant protective</p>
                     </li>
-                    <li class="cta-list-item">
-                        <p class="cta-list-text">Plant protective</p>
+                    <li class="cta__item">
+                        <p class="cta__text">Plant protective</p>
                     </li>
-                    <li class="cta-list-item">
-                        <p class="cta-list-text">Plant protective</p>
+                    <li class="cta__item">
+                        <p class="cta__text">Plant protective</p>
                     </li>
-                    <li class="cta-list-item">
-                        <p class="cta-list-text">Plant protective</p>
+                    <li class="cta__item">
+                        <p class="cta__text">Plant protective</p>
                     </li>
                 </ul>
             </div>
         </section>
     </main>
     <footer class="footer">
-        <div class="container footer-container">
+        <div class="container footer__container">
             <div>
-                <a class="logo footer-logo link" href="./index.html">Healthier</a>
+                <a class="logo logo--light link" href="./index.html">Healthier</a>
                 <ul class="soc-list list">
-                    <li class="soc-list-item">
-                        <a class="soc-list-link link" href="#" target="_blank" rel="noopener noreferrer"
+                    <li class="soc-list__item">
+                        <a class="soc-list__link link" href="#" target="_blank" rel="noopener noreferrer"
                             aria-label="Twitter">
-                            <svg class="soc-icon" width="22" height="22">
+                            <svg class="soc-list__icon" width="22" height="22">
                                 <use href="./images/symbol-defs.svg#icon-twitter"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="soc-list-item">
-                        <a class="soc-list-link link" href="#" target="_blank" rel="noopener noreferrer"
+                    <li class="soc-list__item">
+                        <a class="soc-list__link link" href="#" target="_blank" rel="noopener noreferrer"
                             aria-label="Instagram">
-                            <svg class="soc-icon" width="22" height="22">
+                            <svg class="soc-list__icon" width="22" height="22">
                                 <use href="./images/symbol-defs.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="soc-list-item">
-                        <a class="soc-list-link link" href="#" target="_blank" rel="noopener noreferrer"
+                    <li class="soc-list__item">
+                        <a class="soc-list__link link" href="#" target="_blank" rel="noopener noreferrer"
                             aria-label="Linkedin">
-                            <svg class="soc-icon" width="22" height="22">
+                            <svg class="soc-list__icon" width="22" height="22">
                                 <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="soc-list-item">
-                        <a class="soc-list-link link" href="#" target="_blank" rel="noopener noreferrer"
+                    <li class="soc-list__item">
+                        <a class="soc-list__link link" href="#" target="_blank" rel="noopener noreferrer"
                             aria-label="Facebook">
-                            <svg class="soc-icon" width="22" height="22">
+                            <svg class="soc-list__icon" width="22" height="22">
                                 <use href="./images/symbol-defs.svg#icon-facebook"></use>
                             </svg>
                         </a>
@@ -180,18 +185,18 @@
                 </ul>
             </div>
             <nav>
-                <ul class="nav-list list">
-                    <li class="nav-item">
-                        <a class="nav-link  footer-link link" href="#">About</a>
+                <ul class="nav-menu list">
+                    <li class="nav-menu__item">
+                        <a class="nav-menu__link  nav-menu__link--light link" href="#">About</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link footer-link link" href="#">Services</a>
+                    <li class="nav-menu__item">
+                        <a class="nav-menu__link nav-menu__link--light link" href="#">Services</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link footer-link link" href="#">Team</a>
+                    <li class="nav-menu__item">
+                        <a class="nav-menu__link nav-menu__link--light link" href="#">Team</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link footer-link link" href="#">Contact</a>
+                    <li class="nav-menu__item">
+                        <a class="nav-menu__link nav-menu__link--light link" href="#">Contact</a>
                     </li>
                 </ul>
             </nav>
