@@ -1,0 +1,24 @@
+@use "../abstracts/mixins" as mx;
+
+.features-list {
+	display: flex;
+	gap: 69px;
+
+	&__item {
+		flex-basis: calc((100% - 69px) / 2);
+	}
+
+	&__text {
+		&::before {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+.features-list__text--leaf::before {
+	@include mx.icon-before(url(../images/leaf.svg));
+}
+
+.features-list__text--leaf-orange::before {
+	@include mx.icon-before(url(../images/leaf-orange.svg));
+}

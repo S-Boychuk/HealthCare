@@ -1,0 +1,12 @@
+.nutrition {
+	&__container {
+		display: flex;
+		gap: 87px;
+		align-items: center;
+		padding: 56px 129px;
+	}
+
+	&__content {
+		max-width: 548px;
+	}
+}

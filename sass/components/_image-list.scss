@@ -1,0 +1,8 @@
+.image-list {
+	display: flex;
+	gap: 48px;
+
+	&__item {
+		flex-basis: calc((100% - 48px) / 2);
+	}
+}

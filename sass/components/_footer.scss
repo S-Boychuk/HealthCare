@@ -1,0 +1,10 @@
+.footer {
+	padding: 78px 0;
+
+	background-color: var(--primary-accent-color);
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+	}
+}
