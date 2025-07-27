@@ -1,0 +1,10 @@
+@mixin icon-before($icon-url, $icon-width: 58px, $icon-height: 57px) {
+	content: "";
+	display: block;
+	width: $icon-width;
+	height: $icon-height;
+	background-image: $icon-url;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}

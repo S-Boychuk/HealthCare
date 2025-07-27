@@ -1,0 +1,72 @@
+@use "../abstracts/mixins" as mx;
+
+.cta {
+	padding-bottom: 227px;
+
+	&__container {
+		position: relative;
+		padding: 99px 341px 228px;
+		border-radius: 12px;
+
+		text-align: center;
+
+		background-image: url(../images/cta-bgr.jpg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	&__title {
+		margin-bottom: 12px;
+
+		font-weight: 600;
+		font-size: 38px;
+		line-height: 0.95;
+		color: var(--primary-light-color);
+
+		&::before {
+			@include mx.icon-before(url(../images/leaf-white.svg), 92px, 82px);
+
+			margin: 0 auto 45px;
+		}
+	}
+
+	&__info {
+		margin-bottom: 28px;
+
+		color: var(--primary-light-color);
+	}
+
+	&__list {
+		position: absolute;
+		left: 50%;
+		top: 71%;
+		display: flex;
+		gap: 17px;
+		min-width: 1165px;
+		padding: 119px 66px;
+		border-radius: 12px;
+
+		background-color: var(--bg-accent);
+		transform: translateX(-50%);
+	}
+
+	&__item {
+		flex-basis: calc((100% - 53px) / 4);
+	}
+
+	&__text {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 11px;
+
+		font-size: 21px;
+		line-height: 1.13;
+		text-transform: capitalize;
+
+		&::before {
+			@include mx.icon-before(url(../images/sprout.svg), 82px, 82px);
+		}
+	}
+}

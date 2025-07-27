@@ -1,0 +1,28 @@
+@use "../abstracts/placeholders" as *;
+
+.hero {
+	padding-top: 72px;
+
+	&__title {
+		@extend %section-title;
+
+		margin-bottom: 17px;
+
+		font-size: 65px;
+		line-height: 1.26;
+		text-align: center;
+	}
+
+	&__subtitle {
+		margin-bottom: 33px;
+
+		font-weight: 400;
+		font-size: 16px;
+		text-align: center;
+	}
+
+	&__btn {
+		display: block;
+		margin: 0 auto 56px;
+	}
+}

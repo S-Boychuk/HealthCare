@@ -1,0 +1,17 @@
+.nav-menu {
+	display: flex;
+	gap: 40px;
+
+	&__link {
+		transition: color var(--transition-base);
+
+		&:hover,
+		&:focus {
+			color: var(--secondary-accent-color);
+		}
+
+		&--light {
+			color: var(--primary-light-color);
+		}
+	}
+}

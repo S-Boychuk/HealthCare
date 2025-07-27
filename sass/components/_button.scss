@@ -1,0 +1,31 @@
+@use "../abstracts/placeholders" as *;
+
+.btn {
+	@extend %btn-base;
+
+	&--primary {
+		border: 1px solid transparent;
+		background: var(--primary-accent-color);
+		transition: border-color var(--transition-base),
+			color var(--transition-base), background-color var(--transition-base);
+
+		&:hover,
+		&:focus {
+			border-color: var(--secondary-accent-color);
+			color: var(--secondary-accent-color);
+			background-color: var(--primary-light-color);
+		}
+	}
+
+	&--outline {
+		border: 1px solid var(--bg-light);
+		background-color: transparent;
+		transition: border var(--transition-base) color var(--transition-base);
+
+		&:hover,
+		&:focus {
+			border: solid 1px var(--bg-accent);
+			color: var(--bg-accent);
+		}
+	}
+}

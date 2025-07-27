@@ -1,0 +1,9 @@
+@use "../abstracts/placeholders" as *;
+
+.section {
+	padding-bottom: 104px;
+
+	&-title {
+		@extend %section-title;
+	}
+}

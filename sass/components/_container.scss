@@ -1,0 +1,11 @@
+.container {
+	width: 1330px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+
+	&--light {
+		border-radius: 12px;
+		background-color: var(--bg-light);
+	}
+}
