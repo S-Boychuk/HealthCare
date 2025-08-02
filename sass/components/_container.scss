@@ -1,8 +1,22 @@
+@use "../abstracts/mixins" as mx;
+
 .container {
-	width: 1330px;
+	width: 100%;
 	padding-left: 15px;
 	padding-right: 15px;
 	margin: 0 auto;
+
+	@include mx.mobile {
+		width: 390px;
+	}
+
+	@include mx.tablet {
+		width: 914px;
+	}
+
+	@include mx.desktop {
+		width: 1330px;
+	}
 
 	&--light {
 		border-radius: 12px;

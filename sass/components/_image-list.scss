@@ -1,8 +1,19 @@
+@use "../abstracts/mixins" as mx;
+
 .image-list {
 	display: flex;
-	gap: 48px;
+	flex-direction: column;
+	gap: 28px;
 
-	&__item {
-		flex-basis: calc((100% - 48px) / 2);
+	@include mx.tablet {
+		flex-direction: row;
+	}
+
+	@include mx.desktop {
+		gap: 48px;
+
+		&__item {
+			flex-basis: calc((100% - 48px) / 2);
+		}
 	}
 }

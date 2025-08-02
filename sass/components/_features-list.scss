@@ -2,13 +2,31 @@
 
 .features-list {
 	display: flex;
-	gap: 69px;
+	flex-direction: column;
+	gap: 26px;
+
+	@include mx.tablet {
+		flex-direction: row;
+		gap: 53px;
+	}
+
+	@include mx.desktop {
+		gap: 69px;
+	}
 
 	&__item {
-		flex-basis: calc((100% - 69px) / 2);
+		@include mx.tablet {
+			flex-basis: calc((100% - 53px) / 2);
+		}
+
+		@include mx.desktop {
+			flex-basis: calc((100% - 69px) / 2);
+		}
 	}
 
 	&__text {
+		text-align: center;
+
 		&::before {
 			margin-bottom: 20px;
 		}

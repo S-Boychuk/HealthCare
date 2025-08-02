@@ -1,6 +1,25 @@
+@mixin mobile {
+	@media screen and (min-width: 390px) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media screen and (min-width: 914px) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media screen and (min-width: 1330px) {
+		@content;
+	}
+}
+
 @mixin icon-before($icon-url, $icon-width: 58px, $icon-height: 57px) {
 	content: "";
 	display: block;
+	margin: 0 auto 20px;
 	width: $icon-width;
 	height: $icon-height;
 	background-image: $icon-url;

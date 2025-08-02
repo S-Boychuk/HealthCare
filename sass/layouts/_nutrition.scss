@@ -1,9 +1,27 @@
+@use "../abstracts/mixins" as mx;
+
 .nutrition {
 	&__container {
-		display: flex;
-		gap: 87px;
-		align-items: center;
-		padding: 56px 129px;
+		padding: 39px 50px;
+
+		@include mx.tablet {
+			padding: 106px 170.5px;
+		}
+
+		@include mx.desktop {
+			display: flex;
+			gap: 87px;
+			align-items: center;
+			padding: 56px 129px;
+		}
+	}
+
+	&__image {
+		display: none;
+
+		@include mx.desktop {
+			display: block;
+		}
 	}
 
 	&__content {
