@@ -1,9 +1,30 @@
-.intro__container {
-	display: flex;
-	gap: 196px;
-	padding: 100px 127px 67px;
-}
+@use "../abstracts/placeholders" as *;
+@use "../abstracts/mixins" as mx;
 
-.intro__image {
-	transform: translateY(52px);
+.intro {
+	&__container {
+		padding: 72px 65px 32px;
+
+		@include mx.tablet {
+			padding: 64px 148px 97px;
+		}
+
+		@include mx.desktop {
+			display: flex;
+			gap: 196px;
+		}
+	}
+
+	&__image {
+		display: none;
+
+		@include mx.desktop {
+			display: block;
+			transform: translateY(52px);
+		}
+	}
+
+	&__title {
+		@extend %section-title;
+	}
 }

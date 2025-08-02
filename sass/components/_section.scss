@@ -1,7 +1,16 @@
 @use "../abstracts/placeholders" as *;
+@use "../abstracts/mixins" as mx;
 
 .section {
-	padding-bottom: 104px;
+	padding-bottom: 36px;
+
+	@include mx.tablet {
+		padding-bottom: 80px;
+	}
+
+	@include mx.desktop {
+		padding-bottom: 104px;
+	}
 
 	&-title {
 		@extend %section-title;
